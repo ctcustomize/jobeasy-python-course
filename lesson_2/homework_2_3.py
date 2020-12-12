@@ -2,6 +2,6 @@
 # a string (e.g. '75') and convert it to Celsius.
 # !important you should save only number to result_temperature. Formula (32°F − 32) × 5/9 = 0°C
 
-# type your code here
-temperature_fahrenheit = None
-result_temperature = None
+temperature_fahrenheit = 75
+temperature_celsius = int((temperature_fahrenheit - 32 )*5/9)
+result_temperature = print(temperature_celsius)
