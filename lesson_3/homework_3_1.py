@@ -2,24 +2,24 @@
 # otherwise save the second number to the result_1 variable.
 
 first_number = 10
-second_number = 15
+second_number = 10
 results_1 = print
-if results_1:
-    if first_number > second_number:
-        print(first_number)
-    else:
-        print(second_number)
+
+if first_number > second_number:
+    results_1 = first_number
+else:
+    results_1 = second_number
+print(results_1)
 
 # Enter a random number in number_1 variable. If this number is 20 or
 # higher save “Too high” text to result_2, otherwise save “Thank you”.
-number_1 = 21
+number_1 = 10
 
 if number_1 >= 20:
-    print('Too high')
+    result_2 = 'Too High'
 else:
-    print('Thank you')
-
-
+    result_2 = 'Thank you'
+print(result_2)
 
 # Enter your first name and last name in first_name and last_name variables. If the length of your first name is under
 # five characters, join them together (without a space) and save it to result_3 variable in upper case. If the length
@@ -29,9 +29,10 @@ first_name = 'eric'
 last_name = 'Zhan'
 
 if len(first_name) < 5:
-    print((first_name + last_name).upper())
+    result_3 = (first_name + last_name).upper()
 else:
-    print(first_name.lower())
+    result_3 = (first_name.lower())
+print(result_3)
 
 # Enter a number between 10 and 20 (inclusive) and save number to number_2 variable
 # If they enter a number within this range, save a message “Thank you” to result_4, otherwise a
@@ -40,9 +41,10 @@ else:
 number_2 = 21
 
 if 10 < number_2 < 20:
-    print('Thank you')
+    result_4 = 'Thank you'
 else:
-    print('Incorrect answer')
+    result_4 = 'Incorrect answer'
+print(result_4)
 
 # Enter your age. If you are 18 or over, save the message “You can vote” in result_5,
 # if you are aged 17, save the message “You can learn to drive” in result_5 variable,
@@ -52,13 +54,14 @@ else:
 age = 17
 
 if age >= 18:
-    print('You can vote')
+    result_5 = 'You can vote'
 elif age == 17 :
-    print('You can learn to drive')
+    result_5 = 'You can learn to drive'
 elif age == 16 :
-    print('You can buy a lottery ticket')
+    result_5 = 'You can buy a lottery ticket'
 else:
-    print('You can go Trick-or-Treating')
+    result_5 = 'You can go Trick-or-Treating'
+print(result_5)
 
 
 

@@ -5,15 +5,16 @@
 # If number is  greater than 15 and less than or equal to 20, save the number raised to the power 3 to result_1
 # Else save the text "Wrong value" to result_1
 
-number =17
+number =14
 if 0 < number <= 7 :
-    print(number*10)
+    result_1 = number*10
 elif 7 < number <= 15 :
-    print(int(number/3))
+    result_1 = int(number/3)
 elif 15 < number <= 20 :
-    print(pow(number,3))
+    result_1 = pow(number,3)
 else:
-    print('Wrong Value')
+    result_1 = 'Wrong Value'
+print(result_1)
 
 # Enter two numbers between 1 and 10, save this values to number_1 variable and number_2 variables.
 # If number_1 and number_2 are greater than 0 and less than or equal to 5 save in the product of their multiplication
@@ -26,13 +27,14 @@ else:
 number_1 = 4
 number_2 = 7
 if 0 < number_1 <= 5 and 0 < number_2 <= 5 :
-    print(number_1 * number_2)
+    result_2 = number_1 * number_2
 elif 5 < number_1 <=10 and 10 < number_2 or number_2<= 5 :
-    print(number_1 + number_2)
+    result_2 = number_1 + number_2
 elif 5 < number_2 <=10 and 10 < number_1 or number_1 <= 5:
-    print(number_1 + number_2)
+    result_2 = number_1 + number_2
 elif 5< number_1 <=10 and 5 < number_2 <=10 :
-    print((number_1 +number_2) * 3)
+    result_2 = (number_1 +number_2) * 3
+print(result_2)
 
 # Enter your first name and save it to first_name variable,
 # then Enter last name and save it to last_name
@@ -42,10 +44,12 @@ elif 5< number_1 <=10 and 5 < number_2 <=10 :
 first_name = 'eric'
 last_name = 'zhan'
 
-if len(first_name) < 6 or len(last_name) < 6 :
-    print(first_name + ' ' + last_name)
+if len(first_name) < 6 or len(last_name) < 6:
+
+    result_3 = f'{first_name} {last_name}'
 else:
-    print(first_name * len(last_name))
+    result_3 = first_name * len(last_name)
+print(result_3)
 
 
 
@@ -57,10 +61,11 @@ else:
 random_number = 7
 
 if 10 < random_number < 99 :
-    print(random_number/2)
+    result_4 = random_number/2
 elif not 10 < random_number < 99 :
-    print('"Please, put in a number between 10 and 99"')
+    result_4 = '"Please, put in a number between 10 and 99"'
 if random_number == 0:
-    print('Even number')
+    result_4 = 'Even number'
 elif not random_number == 0:
-    print('Odd number')
+    result_4 = 'Odd number'
+print(result_4)
